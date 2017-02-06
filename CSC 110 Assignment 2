@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class Totem{
+	public static void main(String[] args){ 
+		Scanner scan = new Scanner (System.in);
+		System.out.println("Please input the number of totems you would like to see.");
+		int user_input_number = scan.nextInt();
+		
+
+		System.out.println("You entered ");
+		System.out.println(user_input_number);
+
+		if (user_input_number <= 0) {
+			System.out.println("You must enter a positive number.");
+			System.exit(0);
+
+}
+		Eagle();
+		int figures = (int)(user_input_number - 1);
+		figures = (figures / 2);
+		for (int i = 0; i < figures; i++) {
+			Whale();
+			Human();
+		}
+}
+	public static void Eagle() {
+		System.out.println("                    _--_                   ");  
+		System.out.println("                   /   -)                  ");  
+		System.out.println("               ___/___|___                 ");
+		System.out.println("      ___-----///|     ||||~=---___        ");
+		System.out.println("   //~/////////~/|     |//|||\\\\\\\\\\\\\\\\\\\\"); 
+		System.out.println("  ////////////////|   |/////|\\\\\\\\\\\\\\\\\\\\\\");
+		System.out.println(" /////~~~~~~~~~~~\\ |.||/~~~~~~~~~~~'\\\\\\\\\\");
+		System.out.println("//               /\\\\|\\\\                 \\\\");
+		System.out.println("                ///W^\\W\\                  ");
+		System.out.println("               ////|||\\\\\\                    ");
+		System.out.println("               ~~~~~~~~~~                  ");
+		System.out.println("");
+	}
+	public static void Whale() {
+		System.out.println(" .--------'```'----....,,______             _, ");
+		System.out.println("|                               ‘-------._./  \\");
+		System.out.println("|                                             <");
+		System.out.println("\\         .-'`'-.                              `");
+		System.out.println(" \\         -.o_.       _               _'`\\    /");
+		System.out.println("  ``'--.._.-=-._     .'  \\_''--'`    '`     ._(");
+		System.out.println(" (^^^^^^^`___    '-.  |     \\  ,,.-'            ");
+		System.out.println("  ````````   `,--..___ \\    | `                 ");
+		System.out.println("                      `-., '                     ");
+		System.out.println("");
+	}
+	public static void Human() {
+		System.out.println("     ////|||\\\\\\\\");
+		System.out.println("    //// ^ ^ \\\\\\\\");
+		System.out.println("   ||/   @ @  \\||");
+		System.out.println("   ||     \"    ||");
+		System.out.println("   ||\\    -   /||");
+		System.out.println("   ~~  `).  .(' ~~");
+		System.out.println("  /---'|     | ---\\");
+		System.out.println(" /' ,  ` \\-/'. ,   ' \\");
+		System.out.println("(   \\ |.   ..  | /    )");
+		System.out.println(" \\ _ \\|  .   . |/_   / ");
+		System.out.println("  `(  >.  .    <   )'    ");
+		System.out.println("    \" |  .   . |  \"     ");
+		System.out.println("      |  .     |         ");
+		System.out.println("      |     .  |         ");
+		System.out.println("      | .     .|         ");
+		System.out.println("      |%%%%%%%%|         ");
+		System.out.println("      __|#|#|__          ");
+		System.out.println("     (____|____)         ");
+		System.out.println("						 ");
+	}	
+}
