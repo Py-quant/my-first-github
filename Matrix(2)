@@ -4,6 +4,7 @@ import java.math.*;
 import java.util.stream.*;
 import java.nio.file.*;
 
+//Note: Call files through cmd call method - java Matrix Matrix1.txt - or other filename.
 //Assignment 5
 //CSC 110
 //Faaris Kathrada
